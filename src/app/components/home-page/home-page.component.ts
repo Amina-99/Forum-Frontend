@@ -40,7 +40,6 @@ export class HomePageComponent implements OnInit {
   }
 
   onSelect(userId: any) {
-    console.log(userId);
     this._router.navigate(['/posts'], {
       queryParams: { id: userId },
     });
