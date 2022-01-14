@@ -1,0 +1,9 @@
+export class Post {
+  id: number;
+  title: string;
+  body: string;
+  userId: number;
+  constructor(init?: Partial<Post>) {
+    Object.assign(this, init);
+  }
+}
